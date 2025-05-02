@@ -1,0 +1,17 @@
+body {
+    font-size: 50px;
+}
+
+button {
+    font-size: 50px;
+}
+
+/* Exemplo de classes e id */
+
+.texto-padrao {
+    font-size: 80px;
+}
+
+#texto-vermelho {
+    color: red;
+}

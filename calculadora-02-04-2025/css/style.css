@@ -1,0 +1,89 @@
+/* 
+        vh: viewport height
+        vw: viewport width 
+    */
+
+/* O "*" é usado para selecionar todas as tags do DOM */
+* {
+    padding: 0;
+    margin: 0;
+
+    /* Mudei a fonte pra ficar mais parecido com a calculadora do windows */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Estilos usados no container */
+/* É aqui que centralizamos nossa calculadora */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    height: 100vh;
+}
+
+/* ----------------------------- */
+/* Estilos usados na calculadora */
+/* ----------------------------- */
+
+.calculadora {
+    background-color: #202020;
+    height: auto;
+    width: 250px;
+    color: #fff;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.calculadora .painel {
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 70px;
+    border-bottom: 1px solid #ccc;
+}
+
+.calculadora .linha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5px;
+    gap: 3px;
+}
+
+/* Estilos usados nos botões */
+
+.calculadora .button {
+    flex: 1;
+    height: 55px;
+    background-color: #3c3c3c;
+    color: #fff;
+    font-size: 19px;
+    border-radius: 6px;
+    border: none;
+}
+
+/* Existem outras propriedades como: */
+/* active, focus */
+
+.calculadora .button:hover {
+    cursor: pointer;
+    background-color: #5e5e5e;
+}
+
+.calculadora .button-secondary {
+    background-color: #2d2d2d;
+}
+
+.calculadora .button-tertiary {
+    background-color: #47b1e8;
+}
+
+/* 
+    Dica extra: recomendo vocês utilizarem hierarquia para selecionar 
+    os elementos do DOM sempre que possível.
+    O código fica mais organizado e tem menos chance de quebrar o layout
+    em projetos maiores.
+*/
