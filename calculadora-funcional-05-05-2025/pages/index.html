@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora - Monitoria de Frontend</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <!-- Recursos utilizados em aula: -->
+
+  <!-- Atalho para duplicar linhas:   -->
+  <!-- Shift + Alt + Seta para baixo  -->
+
+  <!-- Ferramenta utilizada na aula: -->
+  <!-- Power Toys: usado para obter a cor dos elementos na tela  -->
+
+  <body>
+    <div class="container">
+      <div class="calculadora">
+        <div class="painel">
+          <span class="texto-espera" id="painel-espera">57-</span>
+          <span class="texto-resultado" id="painel-resultado">0</span>
+        </div>
+
+        <div class="linha">
+          <button type="button" class="button button-number"><p>7</p></button>
+          <button type="button" class="button button-number">8</button>
+          <button type="button" class="button button-number">9</button>
+          <button type="button" class="button button-operator">x</button>
+        </div>
+
+        <div class="linha">
+          <button type="button" class="button button-number">4</button>
+          <button type="button" class="button button-number">5</button>
+          <button type="button" class="button button-number">6</button>
+          <button type="button" class="button button-operator">-</button>
+        </div>
+
+        <div class="linha">
+          <!-- Shift + Alt + Seta para baixo -->
+          <button type="button" class="button button-number">1</button>
+          <button type="button" class="button button-number">2</button>
+          <button type="button" class="button button-number">3</button>
+          <button type="button" class="button button-operator">+</button>
+        </div>
+
+        <div class="linha">
+          <!-- Shift + Alt + Seta para baixo -->
+          <button type="button" class="button button-number disabled">
+            +/-
+          </button>
+          <button type="button" class="button button-number">0</button>
+          <button type="button" class="button button-number">,</button>
+          <button type="button" class="button button-result">=</button>
+        </div>
+      </div>
+      <!-- Fim da div com classe ".calculadora" -->
+    </div>
+    <!-- Fim da div com classe ".container" -->
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

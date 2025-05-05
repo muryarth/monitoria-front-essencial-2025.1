@@ -1,0 +1,108 @@
+/* 
+        vh: viewport height
+        vw: viewport width 
+    */
+
+/* O "*" é usado para selecionar todas as tags do DOM */
+* {
+  padding: 0;
+  margin: 0;
+
+  /* Mudei a fonte pra ficar mais parecido com a calculadora do windows */
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Estilos usados no container */
+/* É aqui que centralizamos nossa calculadora */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  height: 100vh;
+}
+
+/* ----------------------------- */
+/* Estilos usados na calculadora */
+/* ----------------------------- */
+
+.calculadora {
+  background-color: #202020;
+  height: auto;
+  width: 300px;
+  color: #fff;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+.calculadora .painel {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* background-color: aqua; */
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.1rem;
+  padding-top: 0.5rem;
+}
+
+.calculadora .texto-espera {
+  font-size: 20px;
+  font-weight: bold;
+  color: #7b7b7b;
+}
+
+.calculadora .texto-resultado {
+  font-size: 60px;
+}
+
+.calculadora .linha {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 3px;
+  gap: 3px;
+}
+
+/* Estilos usados nos botões */
+
+.calculadora .button {
+  flex: 1;
+  height: 60px;
+  background-color: #3c3c3c;
+  color: #fff;
+  font-size: 19px;
+  border-radius: 6px;
+  border: none;
+}
+
+/* Existem outras propriedades como: */
+/* active, focus */
+
+.calculadora .button:hover {
+  cursor: pointer;
+  background-color: #5e5e5e;
+}
+
+.calculadora .button-operator {
+  background-color: #2d2d2d;
+}
+
+.calculadora .button-result {
+  background-color: #47b1e8;
+}
+
+.calculadora .button.disabled {
+  pointer-events: none;
+  background-color: #5e5e5e;
+}
+
+/* 
+    Dica extra: recomendo vocês utilizarem hierarquia para selecionar 
+    os elementos do DOM sempre que possível.
+    O código fica mais organizado e tem menos chance de quebrar o layout
+    em projetos maiores.
+*/
