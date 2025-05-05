@@ -20,12 +20,21 @@
     <div class="container">
       <div class="calculadora">
         <div class="painel">
-          <span class="texto-espera" id="painel-espera">57-</span>
-          <span class="texto-resultado" id="painel-resultado">0</span>
+          <span class="texto-espera invisible" id="painel-espera"></span>
+          <span class="texto-resultado" id="painel-calculo">0</span>
         </div>
 
         <div class="linha">
-          <button type="button" class="button button-number"><p>7</p></button>
+          <button type="button" class="button disabled">%</button>
+          <button type="button" class="button disabled">CE</button>
+          <button type="button" class="button" id="button-reset">C</button>
+          <button type="button" class="button button-operator disabled">
+            <
+          </button>
+        </div>
+
+        <div class="linha">
+          <button type="button" class="button button-number">7</button>
           <button type="button" class="button button-number">8</button>
           <button type="button" class="button button-number">9</button>
           <button type="button" class="button button-operator">x</button>
@@ -53,7 +62,13 @@
           </button>
           <button type="button" class="button button-number">0</button>
           <button type="button" class="button button-number">,</button>
-          <button type="button" class="button button-result">=</button>
+          <button
+            type="button"
+            class="button button-result"
+            id="button-result-calculator"
+          >
+            =
+          </button>
         </div>
       </div>
       <!-- Fim da div com classe ".calculadora" -->
