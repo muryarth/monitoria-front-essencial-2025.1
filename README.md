@@ -2,7 +2,7 @@
 
 Repositório usado para publicar todos os exemplos feitos durante a monitoria.
 
-[30-05-2025]
+[30-04-2025]
 
 Observação: a pasta "calculadora-layout-02-05-2025" é a primeira versão, que só tem o layout.
 
